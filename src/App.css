@@ -1,125 +1,141 @@
 body {
-    background-color: rgb(231, 226, 220);
-    color: rgb(34, 34, 143);
-    margin: 0px;
-    padding: 0px;
+  background-color: rgb(243, 233, 225);
+  color: rgb(34, 34, 143);
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
-    letter-spacing: 0.3rem;
-    color: rgb(34, 34, 143);
-    margin-top: 24px;
-    margin-bottom: 34px;
+  letter-spacing: 0.3rem;
+  color: rgb(34, 34, 143);
+  margin-top: 24px;
+  margin-bottom: 34px;
 }
 
-/* CSS for Add */
+/* CSS for AddItem */
 
 .form {
-    padding: 12px;
-    border: 1px dotted rgb(95, 173, 209);
+  padding: 12px;
+  border: 3px double rgb(130, 130, 206);
 }
 
 label {
-    font-weight: 700;
-    font-size: 15px;
-    padding-top: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 8px;
 }
 
 input {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .button-inc {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    font-weight: 500;
-    border-radius: 15px;
-    border: 1px solid rgb(34, 34, 143);
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 15px;
+  border: 1px solid rgb(34, 34, 143);
 }
 
 .button-inc:hover {
-    background-color: rgb(95, 173, 209);
-    border: 1px solid rgb(95, 173, 209);
+  background-color: rgb(95, 173, 209);
+  border: 1px solid rgb(95, 173, 209);
 }
 
 .quantity {
-    color: rgb(34, 34, 143);
-    font-size: 22px;
-    font-weight: 800;
-    margin: 6px;
+  color: rgb(34, 34, 143);
+  font-size: 22px;
+  font-weight: 800;
+  margin: 6px;
 }
 
 .button-add {
-    height: 42px;
-    width: 58px;
-    padding: 6px;
-    margin-top: 22px;
-    background-color: rgb(95, 173, 209);
-    color: rgb(255, 255, 255);
-    border: 0px;
-    border-radius: 16px;
+  height: 42px;
+  width: 58px;
+  padding: 6px;
+  margin-top: 22px;
+  background-color: rgb(95, 173, 209);
+  color: rgb(255, 255, 255);
+  border: 0px;
+  border-radius: 16px;
 }
 
 .button-add:hover {
-    background-color: rgb(109, 196, 236);
-    color: rgb(255, 255, 255);
+  background-color: rgb(109, 196, 236);
+  color: rgb(255, 255, 255);
 }
 
 
-/* CSS for List */
+/* CSS for ListItem */
 
 .list {
-    padding: 0px;
-    margin: 0px;
-    background-color: rgb(255, 255, 255);
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(255, 255, 255);
 }
 
 .listExtra {
-    background-color: rgb(255, 255, 255);
-    height: 20px;
+  background-color: rgb(255, 255, 255);
+  height: 20px;
 }
 
 hr {
-    margin: 0px;
-    padding: 0px;
-    border-top: 2px solid #b7ecf0;
+  margin: 0px;
+  padding: 0px;
+  border-top: 2px solid #b7ecf0;
 }
 
 .itemName {
-    font-family: 'Sriracha', cursive;
-    font-size: 22px;
-    margin-left: 14px;
+  font-family: 'Sriracha', cursive;
+  font-size: 22px;
+  margin-left: 4px;
 }
 
 .itemNotes {
-    font-family: 'Sriracha', cursive;
-    font-size: 15px;
-    color: rgb(130, 130, 206);
-    margin-left: 14px;
+  font-family: 'Sriracha', cursive;
+  font-size: 15px;
+  color: rgb(130, 130, 206);
+  margin-left: 37px;
 }
 
 .itemQuantity {
-    font-family: 'Sriracha', cursive;
-    font-size: 16px;
-    color: rgb(130, 130, 206);
-    float: right;
-    margin-left: 14px;
-    margin-right: 14px;
+  font-family: 'Sriracha', cursive;
+  font-size: 16px;
+  color: rgb(130, 130, 206);
+  float: right;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 .button-edit {
-    font-size: 22px;
-    color: rgb(95, 173, 209);
-    height: 32px;
-    width: 32px;
-    margin-left: 18px;
-    padding: 0px;
-    border: 0px;
+  font-size: 22px;
+  color: rgb(95, 173, 209);
+  height: 32px;
+  width: 32px;
+  margin-left: 2px;
+  border: 0px;
 }
 
 .button-edit:hover {
-    color: rgb(34, 34, 143);
+  color: rgb(34, 34, 143);
+}
+
+.button-clear {
+  float: right;
+  height: 42px;
+  width: 88px;
+  padding: 6px;
+  margin-top: 22px;
+  background-color: rgb(95, 173, 209);
+  color: rgb(255, 255, 255);
+  border: 0px;
+  border-radius: 16px;
+}
+
+.button-clear:hover {
+  background-color: rgb(109, 196, 236);
+  color: rgb(255, 255, 255);
 }
 
 

@@ -7,12 +7,20 @@ class App extends React.Component {
   state = {
     list: [
       { name: "bread", notes: "brown sourdough", quantity: 1, id: 1 },
-      { name: "soya milk", notes: "Provamel", quantity: 3, id: 2 },
-      { name: "cashew nuts", notes: "", quantity: 1, id: 3 },
-      { name: "chocolate", notes: "white or milk", quantity: 2, id: 4 },
-      { name: "spinach", notes: "", quantity: 1, id: 5 },
-      { name: "loo roll", notes: "", quantity: 4, id: 6 }
+      { name: "cashew nuts", notes: "organic", quantity: 1, id: 2 },
+      { name: "chocolate", notes: "white", quantity: 2, id: 3 },
+      { name: "bag of spinach", notes: "", quantity: 1, id: 4 }
     ]
+  }
+
+  handleAdd = (name, notes, quantity) => {
+      const listCopy = this.state.list.slice();
+      const id = this.state.list.length + 1;
+      const newItem = { name, notes, quantity, id };
+      listCopy.push(newItem); // NOT: const newList = listCopy.push(newItem)
+      this.setState({
+        list: listCopy
+      })
   }
 
   render() {
@@ -26,7 +34,7 @@ class App extends React.Component {
         <div className="row">
           {/* left col */}
           <div className="col-5">
-            <AddItem />
+            <AddItem handleAddFunc={this.handleAdd} />
           </div>
           {/* right col */}
           <div className="col-7">
@@ -36,10 +44,11 @@ class App extends React.Component {
                 itemName={item.name}
                 itemNotes={item.notes}
                 itemQuantity={item.quantity}
-                id={item.id}
+                key={item.id}
               />
             })}
             <div className="listExtra"></div>
+            <button className="button-clear">clear list</button>
           </div>
         </div>
       </div>
