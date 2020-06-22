@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class ListItem extends React.Component {
   render() {
@@ -8,13 +8,11 @@ class ListItem extends React.Component {
         <span className="itemName">{this.props.itemName}</span>
         <span className="itemQuantity">x {this.props.itemQuantity}</span>
         <div>
-        <span className="itemNotes">{this.props.itemNotes}</span>
-
-
+          <span className="itemNotes">{this.props.itemNotes}</span>
         </div>
         <hr />
       </div>
-    )
+    );
   }
 }
 

@@ -66,7 +66,6 @@ input {
   color: rgb(255, 255, 255);
 }
 
-
 /* CSS for ListItem */
 
 .list {
@@ -87,20 +86,20 @@ hr {
 }
 
 .itemName {
-  font-family: 'Sriracha', cursive;
+  font-family: "Sriracha", cursive;
   font-size: 22px;
   margin-left: 4px;
 }
 
 .itemNotes {
-  font-family: 'Sriracha', cursive;
+  font-family: "Sriracha", cursive;
   font-size: 15px;
   color: rgb(130, 130, 206);
   margin-left: 37px;
 }
 
 .itemQuantity {
-  font-family: 'Sriracha', cursive;
+  font-family: "Sriracha", cursive;
   font-size: 16px;
   color: rgb(130, 130, 206);
   float: right;
@@ -109,12 +108,13 @@ hr {
 }
 
 .button-edit {
-  font-size: 22px;
+  font-size: 26px;
   color: rgb(95, 173, 209);
   height: 32px;
   width: 32px;
   margin-left: 2px;
   border: 0px;
+  background: transparent;
 }
 
 .button-edit:hover {
@@ -137,10 +137,3 @@ hr {
   background-color: rgb(109, 196, 236);
   color: rgb(255, 255, 255);
 }
-
-
-
-
-
-
-
